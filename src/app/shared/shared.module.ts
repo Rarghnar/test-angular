@@ -8,6 +8,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MaterialModule } from '../material/material.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CartRepeatPipe } from './pipes/cart-repeat/cart-repeat.pipe';
+import { CartCountRepeatPipe } from './pipes/cart-count-repeat/cart-count-repeat.pipe';
 
 
 
@@ -16,14 +18,18 @@ import { ReactiveFormsModule } from '@angular/forms';
     ExponentialPipe,
     HighlightDirective,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    CartRepeatPipe,
+    CartCountRepeatPipe,
 
   ],
   exports: [
     ExponentialPipe,
     HighlightDirective,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    CartRepeatPipe,
+    CartCountRepeatPipe
   ],
   imports: [
     CommonModule,
